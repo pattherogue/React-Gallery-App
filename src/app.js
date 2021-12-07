@@ -4,3 +4,10 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
+
+import apiKey from '../config';
+
+import Nav from './Nav';
+import NotFound from './NotFound';
+import Search from './Search';
+import PhotoContainer from './PhotoContainer';
