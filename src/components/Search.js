@@ -10,3 +10,10 @@ class Search extends Component {
 onSearch = e => {
     this.setState({querySearch: e.target.value });
 }
+
+handleSubmit = e => {
+    e.preventDefault();
+    this.props.onSubmit(this.query.value)
+    this.props.history.push(`/search/$(this.query.value})`)
+    e.currentTarget.reset()
+}
