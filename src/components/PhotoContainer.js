@@ -14,4 +14,17 @@ class PhotoContainer extends Component {
 
         return photos;
     }
+
+    render() {
+        return (
+            <div className="photo-container">
+                <h2>Results</h2>
+                <ul>
+                    { this.searchPictures() }
+                </ul>
+            </div>
+        )
+    }
 }
+
+export default withRouter(PhotoContainer);
