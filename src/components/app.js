@@ -11,3 +11,10 @@ import Nav from './Nav';
 import NotFound from './NotFound';
 import Search from './Search';
 import PhotoContainer from './PhotoContainer';
+
+class App extends Component {
+    state = {
+        images: [];
+    }
+
+}
