@@ -15,6 +15,9 @@ import PhotoContainer from './PhotoContainer';
 class App extends Component {
     state = {
         images: [];
+
+        searchQuery: '';
+        searchPhotos: [];
     }
 
 }
