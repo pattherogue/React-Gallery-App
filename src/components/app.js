@@ -18,6 +18,7 @@ class App extends Component {
 
         searchQuery: '';
         searchPhotos: [];
+        isLoading: true
     }
 
 }
