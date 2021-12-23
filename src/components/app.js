@@ -1,5 +1,7 @@
 import './css/index.css';
 import SearchForm from './components/SearchForm';
+import Nav from './omponents/Nav';
+import PhotoContainer from './components/PhotoContainer';
 
 import React, { Component } from 'react';
 import {
