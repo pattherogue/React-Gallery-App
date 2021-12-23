@@ -1,3 +1,6 @@
+import './css/index.css';
+import SearchForm from './components/SearchForm';
+
 import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
@@ -9,7 +12,7 @@ import apiKey from '../config';
 
 import Nav from './Nav';
 import NotFound from './NotFound';
-import Search from './Search';
+import Search from './SearchForm';
 import PhotoContainer from './PhotoContainer';
 
 class App extends Component {
