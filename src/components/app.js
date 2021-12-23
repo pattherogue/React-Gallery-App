@@ -4,6 +4,9 @@ import Nav from './omponents/Nav';
 import PhotoContainer from './components/PhotoContainer';
 import NotFound from './components/NotFound';
 
+/* Nav data */
+import ApiKey from './config';
+
 import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
@@ -11,7 +14,6 @@ import {
     Switch
 } from 'react-router-dom';
 
-import apiKey from '../config';
 
 import Nav from './Nav';
 import NotFound from './NotFound';
