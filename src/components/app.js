@@ -2,6 +2,7 @@ import './css/index.css';
 import SearchForm from './components/SearchForm';
 import Nav from './omponents/Nav';
 import PhotoContainer from './components/PhotoContainer';
+import NotFound from './components/NotFound';
 
 import React, { Component } from 'react';
 import {
