@@ -17,7 +17,7 @@ import {
 //Components 
 import Nav from './Nav';
 import NotFound from './NotFound';
-import Search from './SearchForm';
+import SearchForm from './SearchForm';
 import PhotoContainer from './PhotoContainer';
 
 class App extends Component {
