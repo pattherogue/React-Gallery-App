@@ -7,10 +7,10 @@ import {
 import './css/index.css';
 
 //Components 
-import Nav from '../src/components/Nav';
-import NotFound from '../src/components/NotFound';
-import SearchForm from '../src/components/SearchForm';
-import PhotoContainer from '../src/components/PhotoContainer';
+import Nav from './Components/Nav';
+import NotFound from './Components/NotFound';
+import SearchForm from './Components/SearchForm';
+import PhotoContainer from './Components/PhotoContainer';
 
 class App extends Component {
     state = {
