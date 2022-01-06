@@ -19,6 +19,16 @@ class App extends Component {
     query: [],
     loading: true
   }
+
+  componentDidMount () {
+    this.performSearch('nature');
+    this.performSearch('food');
+    this.performSearch('creative');
+    this.setState({
+      loading: true
+    });
+  }
+  
 }
 
 export default App;
