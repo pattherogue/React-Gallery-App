@@ -23,7 +23,7 @@ class App extends Component {
     nature: [],
     food: [],
     creative: [],
-    query: [],
+    query: '',
     loading: true
   }
 
@@ -35,6 +35,10 @@ class App extends Component {
       loading: true
     });
   }
+
+  searchAction = (query) => {
+    this.setState({loading: true})
+  }
   
   render () {
     return (
@@ -43,6 +47,7 @@ class App extends Component {
       </BrowswerRouter>
     )
   }
+
 
 }
 
