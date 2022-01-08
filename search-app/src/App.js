@@ -15,6 +15,8 @@ import PhotoContainer from './Components/PhotoContainer';
 import SearchForm from './Components/SearchForm';
 import NotFound from './Components/NotFound';
 
+import axios from "axios";
+
 class App extends Component {
   
   state = {
