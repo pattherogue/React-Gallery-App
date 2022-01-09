@@ -39,7 +39,13 @@ class App extends Component {
   searchAction = (query) => {
     this.setState({loading: true})
     axios.get('').then(response => {
-      
+
+      if(query === 'nature') {
+        this.setState({
+          nature: response.data.photos.photo,
+          loading: false
+        })
+      }
     })
   }
   
