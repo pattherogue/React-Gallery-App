@@ -45,6 +45,22 @@ class App extends Component {
           nature: response.data.photos.photo,
           loading: false
         })
+      } else if (query === 'food') {
+        this.setState({
+          food: response.data.photos.photo,
+          loading: false
+        })
+      } else if (query) {
+        this.setState({
+          creative: response.data.photos.photo,
+          loading: false
+        })
+      } else {
+        this.setState({
+          photos: response.data.photos.photo,
+          title: query,
+          loading: false
+        })
       }
     })
   }
