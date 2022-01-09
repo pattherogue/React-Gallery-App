@@ -38,7 +38,9 @@ class App extends Component {
 
   searchAction = (query) => {
     this.setState({loading: true})
-    axios.get('https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1')
+    axios.get('').then(response => {
+      
+    })
   }
   
   render () {
