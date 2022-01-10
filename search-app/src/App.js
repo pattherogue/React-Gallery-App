@@ -73,7 +73,9 @@ class App extends Component {
   render () {
     return (
       <BrowswerRouter>
-        
+        <div className='container'>
+
+        </div>
       </BrowswerRouter>
     )
   }
