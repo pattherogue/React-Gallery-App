@@ -64,7 +64,7 @@ class App extends Component {
       }
     })
     .catch(error => {
-      console.log('Fetching data error');
+      console.log('Fetching data error', error);
     });
   }
   
