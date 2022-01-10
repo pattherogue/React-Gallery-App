@@ -74,6 +74,7 @@ class App extends Component {
     return (
       <BrowswerRouter>
         <div className='container'>
+          <SearchForm onSearch={this.performSearch} />
 
         </div>
       </BrowswerRouter>
