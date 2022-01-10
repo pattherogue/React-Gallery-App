@@ -36,9 +36,9 @@ class App extends Component {
     });
   }
 
-  searchAction = (query) => {
+  performSearch = (query) => {
     this.setState({loading: true})
-    axios.get('').then(response => {
+    axios.get(``).then(response => {
 
       if(query === 'nature') {
         this.setState({
