@@ -80,7 +80,10 @@ class App extends Component {
             (this.state.loading) 
             ? <p>Loading...</p> :
           <Switch>
-            
+            <Route/>
+            <Route/>
+            <Route/>
+            <Route/>
           </Switch>
           }
         </div>
