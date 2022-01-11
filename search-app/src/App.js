@@ -81,7 +81,7 @@ class App extends Component {
             ? <p>Loading...</p> :
           <Switch>
             <Route path="/nature"/>
-            <Route/>
+            <Route path="food"/>
             <Route/>
             <Route/>
           </Switch>
