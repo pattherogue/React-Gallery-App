@@ -80,9 +80,9 @@ class App extends Component {
             (this.state.loading) 
             ? <p>Loading...</p> :
           <Switch>
-            <Route path="/nature"/>
-            <Route path="food"/>
-            <Route/>
+            <Route path="/nature" />
+            <Route path="food" />
+            <Route path="creative" />
             <Route/>
           </Switch>
           }
