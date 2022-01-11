@@ -77,7 +77,7 @@ class App extends Component {
           <SearchForm onSearch={this.performSearch} />
 
           {
-            (this,state,loading)
+            (this.state.loading)
           }
         </div>
       </BrowswerRouter>
