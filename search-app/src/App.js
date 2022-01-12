@@ -80,6 +80,7 @@ class App extends Component {
             (this.state.loading) 
             ? <p>Loading...</p> :
           <Switch>
+            <Route exact path="/" render={() => <Redirect to="/nature"/>} />
             <Route path="/nature" render={() => <PhotoContainer data={this.state.nature}/>} />
             <Route path="food" render={() => <PhotoContainer data={this.state.food}/>} />
             <Route path="creative" render={() => <PhotoContainer data={this.state.creative}/>} />
