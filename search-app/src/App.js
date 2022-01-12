@@ -82,7 +82,7 @@ class App extends Component {
           <Switch>
             <Route path="/nature" render={() => <PhotoList data={this.state.nature}/>} />
             <Route path="food" render={() => <PhotoList data={this.state.food}/>} />
-            <Route path="creative" />
+            <Route path="creative" render={() => <PhotoList data={this.state.creative}/>} />
             <Route/>
           </Switch>
           }
