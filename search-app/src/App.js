@@ -80,7 +80,7 @@ class App extends Component {
             (this.state.loading) 
             ? <p>Loading...</p> :
           <Switch>
-            <Route path="/nature" />
+            <Route path="/nature" render={() => <Redirect to="/nature"/>} />
             <Route path="food" />
             <Route path="creative" />
             <Route/>
