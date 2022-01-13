@@ -90,7 +90,8 @@ class App extends Component {
           }
         </div>
       </BrowswerRouter>
-    )
+    );
+
   }
 
 
