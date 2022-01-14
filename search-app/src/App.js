@@ -40,7 +40,7 @@ class App extends Component {
 
   performSearch = (query) => {
     this.setState({loading: true})
-    axios.get(`http://api.giphy.com/v1/gifs/search?q={query}&limit=24&api_key=dc6zaTOxFJmzC 
+    axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1
     `).then(response => {
 
       if(query === 'nature') {
@@ -100,3 +100,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
