@@ -14,6 +14,7 @@ import Nav from './Components/Nav';
 import PhotoContainer from './Components/PhotoContainer';
 import SearchForm from './Components/SearchForm';
 import NotFound from './Components/NotFound';
+import Error from "./Components/Error";
 
 import axios from "axios";
 
