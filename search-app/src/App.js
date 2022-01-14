@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
+import axios from "axios";
+
 import { 
   BrowswerRouter, 
   Route, 
   Switch , 
   Redirect 
 } from 'react-router-dom';
+
 import './App.css';
 import apiKey from './config';
 
@@ -16,7 +18,6 @@ import SearchForm from './Components/SearchForm';
 import NotFound from './Components/NotFound';
 import Error from './Components/Error';
 
-import axios from "axios";
 
 class App extends Component {
   
