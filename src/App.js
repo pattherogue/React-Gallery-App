@@ -74,7 +74,7 @@ class App extends Component {
   
   render () {
     return (
-      <BrowswerRouter>
+      <BrowserRouter>
         <div className='container'>
           <SearchForm onSearch={this.performSearch} />
 
@@ -91,7 +91,7 @@ class App extends Component {
           </Switch>
           }
         </div>
-      </BrowswerRouter>
+      </BrowserRouter>
     );
 
   }
