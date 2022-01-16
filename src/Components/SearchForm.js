@@ -37,4 +37,4 @@ class Search extends Component {
     }
 }
 
-export default withRaouter(Search);
+export default withRouter(Search);
