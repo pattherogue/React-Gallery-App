@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import Photo from '.Photo';
+import Photo from './Photo';
 
 class PhotoContainer extends Component {
     pictureSearch() {
