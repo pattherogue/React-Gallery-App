@@ -20,7 +20,7 @@ class PhotoContainer extends Component {
             <div className="photo-container">
                 <h2>Results</h2>
                 <ul>
-                    { this.searchPictures() }
+                    { this.pictureSearch() }
                 </ul>
             </div>
         )
