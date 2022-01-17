@@ -53,7 +53,7 @@ class App extends Component {
           food: response.data.photos.photo,
           loading: false
         })
-      } else if (query) {
+      } else if (query === 'creative') {
         this.setState({
           creative: response.data.photos.photo,
           loading: false
