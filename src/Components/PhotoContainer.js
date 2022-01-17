@@ -4,7 +4,7 @@ import Photo from './Photo';
 
 class PhotoContainer extends Component {
     pictureSearch() {
-        let photos = this.props.imageData.map( image => 
+        let photos = this.props.data.map( image => 
             <Photo 
                 url={`https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_w.jpg`} 
                 key={image.id} 
