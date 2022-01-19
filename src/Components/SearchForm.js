@@ -37,4 +37,4 @@ class Search extends Component {
     }
 }
 
-export default withRouter(omSearch);
+export default withRouter(Search);
