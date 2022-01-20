@@ -5,7 +5,6 @@ import {
   BrowserRouter, 
   Route, 
   Switch , 
-  withRouter,
   Redirect 
 } from 'react-router-dom';
 
