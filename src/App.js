@@ -15,7 +15,6 @@ import apiKey from './config';
 import Nav from './Components/Nav';
 import PhotoContainer from './Components/PhotoContainer';
 import SearchForm from './Components/SearchForm';
-import NotFound from './Components/NotFound';
 import Error from './Components/Error';
 import Loading from './Components/Loading';
 
@@ -78,10 +77,10 @@ class App extends Component {
       <BrowserRouter>
         <div className='container'>
           <SearchForm onSearch={this.performSearch} />
-
+          <Nav />
           {
             (this.state.loading) 
-            ? <p>Loading...</p> :
+            ? <Loading /> :
           <Switch>
             <Route exact path="/" render={() => <Redirect to="/nature"/>} />
             <Route path="/nature" render={() => <PhotoContainer data={this.state.nature}/>} />
