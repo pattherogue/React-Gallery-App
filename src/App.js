@@ -89,7 +89,7 @@ class App extends Component {
             <Route path="food" render={() => <PhotoContainer data={this.state.food}/>} />
             <Route path="creative" render={() => <PhotoContainer data={this.state.creative}/>} />
             <Route path={"/search/:query"} render= {() => <PhotoContainer data={this.state.photos} />}/>
-            <Route component={ Error } />
+            <Route component={ Error /} />
           </Switch>
           }
         </div>
