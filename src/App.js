@@ -22,6 +22,7 @@ import Loading from './Components/Loading';
 class App extends Component {
   
   state = {
+    displayPhotos: [],
     nature: [],
     food: [],
     creative: [],
@@ -60,6 +61,11 @@ class App extends Component {
           creative: response.data.photos.photo,
           loading: false
         })
+      else if (query === 'cars')
+        this.setState({
+          displayPhotos: responmse.data.photos.photo,
+          loading: false
+        })
       } else {
         this.setState({
           photos: response.data.photos.photo,
@@ -84,12 +90,12 @@ class App extends Component {
             (this.state.loading) 
             ? <Loading /> :
           <Switch>
-            <Route exact path="/" render={() => <Redirect to="/nature"/>} />
-            <Route path="/nature" render={() => <PhotoContainer data={this.state.nature}/>} />
-            <Route path="food" render={() => <PhotoContainer data={this.state.food}/>} />
-            <Route path="creative" render={() => <PhotoContainer data={this.state.creative}/>} />
+            <Route exact path="/" render={() => <PhotoContainer to="/nature"/>} />
+            <Route exact="/nature" render={() => <PhotoContainer data={this.state.nature}/>} />
+            <Route exact="food" render={() => <PhotoContainer data={this.state.food}/>} />
+            <Route exact="creative" render={() => <PhotoContainer data={this.state.creative}/>} />
             <Route path={"/search/:query"} render= {() => <PhotoContainer data={this.state.photos} />}/>
-            <Route component={ Error /} />
+            <Route render={() =>  <Error />} />
           </Switch>
           }
         </div>
