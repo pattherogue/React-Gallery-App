@@ -25,8 +25,10 @@ class App extends Component {
     nature: [],
     food: [],
     creative: [],
+    photos: [],
     query: '',
-    loading: true
+    loading: true,
+    title: ''
   }
 
   componentDidMount () {
