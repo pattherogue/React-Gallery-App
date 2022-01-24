@@ -63,7 +63,7 @@ class App extends Component {
         })
         else if (query === 'cars')
         this.setState({
-          displayPhotos: responmse.data.photos.photo,
+          displayPhotos: response.data.photos.photo,
           loading: false
         })
         else {
